@@ -57,8 +57,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         Intent intent=new Intent(this,TercerActivity.class);
-        intent.putExtra(CALLE_EXTRA,calle.getText().toString());
-        intent.putExtra(CP_EXTRA,cp.getText().toString());
+        intent.putExtra(SecondActivity.CALLE_EXTRA,calle.getText().toString());
+        intent.putExtra(SecondActivity.CP_EXTRA,cp.getText().toString());
         if(nombre!=null){
             intent.putExtra(MainActivity.nombre_INTENT,nombre);
         }

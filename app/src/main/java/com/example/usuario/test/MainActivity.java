@@ -34,8 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intentEnviar = new Intent(MainActivity.this, SecondActivity.class);
                 intentEnviar.putExtra(MainActivity.nombre_INTENT,nombre.getText().toString());
                 startActivity(intentEnviar);
+
                 return;
         }
     }
 }
+
 

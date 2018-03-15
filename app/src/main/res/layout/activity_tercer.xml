@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context="com.example.usuario.test.TercerActivity">
 
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/nombreTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nombreTextView" />
+
+    <TextView
+        android:id="@+id/CPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/calleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/calleTextView" />
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="165dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/CPTextView"
+        app:layout_constraintTop_toBottomOf="@+id/calleTextView" />
 </android.support.constraint.ConstraintLayout>

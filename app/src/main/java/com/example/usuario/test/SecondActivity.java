@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.usuario.test.com.test.beans.PersonaDTO;
+
 public class SecondActivity extends AppCompatActivity implements View.OnClickListener{
 
 
@@ -50,9 +52,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View view) {
 
         Intent previusIntent=getIntent();
-        String nombre=null;
+        PersonaDTO nombre=null;
         if(previusIntent!=null){
-            nombre=previusIntent.getStringExtra(MainActivity.nombre_INTENT);
+            nombre= (PersonaDTO) previusIntent.getSerializableExtra(MainActivity.nombre_INTENT);
 
         }
 

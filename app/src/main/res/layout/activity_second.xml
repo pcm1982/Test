@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.test.SecondActivity">
+
+    <TextView
+        android:id="@+id/NameStreetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/NameTextview" />
+
+    <EditText
+        android:id="@+id/NameStreetEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NameStreetTextView"
+        android:layout_alignStart="@+id/NameStreetTextView"
+        android:layout_below="@+id/NameStreetTextView"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/nameEditText"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/CPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/NameStreetEditText"
+        android:layout_alignStart="@+id/NameStreetEditText"
+        android:layout_below="@+id/NameStreetEditText"
+        android:layout_marginTop="42dp"
+        android:text="@string/postalCodeTextview" />
+
+    <EditText
+        android:id="@+id/CPEditText"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CPTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CPEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="@string/nextButton" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="nombreTextView">Nombre:</string>
+    <string name="name">Nombre</string>
+    <string name="button">Button</string>
+    <string name="ok">OK</string>
+    <string name="NameTextview">Nombre:</string>
+    <string name="nameEditText">nombre</string>
+    <string name="postalCodeTextview">Codigo Postal:</string>
+    <string name="nextButton">nest</string>
+</resources>
